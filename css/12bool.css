@@ -1,0 +1,103 @@
+/* general rules  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+[class*="col-"] {
+  float: left;
+  position: relative;
+}
+
+/* ends general rules */
+
+/* debug */
+
+.debug [class*="col-"] {
+  height: 300px;
+  border: 0.5px solid black;
+  background: pink;
+  padding: 10px;
+}
+.debug [class*="nested"] {
+  background: #f07e80;
+  border: 1px solid white;
+  height: 280px
+}
+
+.debug .container {
+  background: blue;
+  border: 0.5px solid black;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+}
+
+
+/* framework */
+.col-1 {
+  width: calc((100% / 12) * 1);
+  background
+}
+
+.col-2 {
+  width: calc((100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+.col-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.col-8 {
+  width: calc((100% / 12) * 8);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-10 {
+  width: calc((100% / 12) * 10);
+}
+
+.col-11 {
+  width: calc((100% / 12) * 11);
+}
+
+.col-12 {
+  width: calc((100% / 12) * 12);
+}
